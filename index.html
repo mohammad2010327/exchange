@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق صرف العملات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>تطبيق صرف العملات</h1>
+    <div class="converter-container">
+        <label for="amount">المبلغ:</label>
+        <input type="number" id="amount" placeholder="أدخل المبلغ" />
+
+        <label for="from-currency">من:</label>
+        <select id="from-currency">
+            <option value="AED">الدرهم الإماراتي</option>
+            <option value="USD">الدولار الأمريكي</option>
+            <option value="SYP">الليرة السورية</option>
+            <option value="EUR">اليورو</option>
+            <option value="GBP">الجنيه الإسترليني</option>
+            <option value="JPY">الين الياباني</option>
+            <option value="CAD">الدولار الكندي</option>
+            <option value="AUD">الدولار الأسترالي</option>
+            <option value="CHF">الفرنك السويسري</option>
+            <option value="CNY">اليوان الصيني</option>
+        </select>
+
+        <label for="to-currency">إلى:</label>
+        <select id="to-currency">
+            <option value="AED">الدرهم الإماراتي</option>
+            <option value="USD">الدولار الأمريكي</option>
+            <option value="SYP">الليرة السورية</option>
+            <option value="EUR">اليورو</option>
+            <option value="GBP">الجنيه الإسترليني</option>
+            <option value="JPY">الين الياباني</option>
+            <option value="CAD">الدولار الكندي</option>
+            <option value="AUD">الدولار الأسترالي</option>
+            <option value="CHF">الفرنك السويسري</option>
+            <option value="CNY">اليوان الصيني</option>
+        </select>
+
+        <button onclick="convertCurrency()">تحويل</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <footer>
+        <p>تم صنع هذا التطبيق بواسطة محمد عبد القادر</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
